@@ -1,0 +1,58 @@
+/* 14 - contact pages - start
+==================================================================================================== */
+.main_office_section {
+	.item_title {
+		line-height: 1;
+		font-size: 48px;
+		margin-bottom: 14px;
+	}
+	.office_info {
+		padding-left: 20px;
+		li {
+			font-size: 18px;
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		i {
+			margin-right: 15px;
+		}
+	}
+}
+
+.contact_form_section {
+	.form_item {
+		textarea {
+			min-height: 190px;
+		}
+	}
+}
+
+#mapBox {
+	height: 950px;
+}
+
+.contact_details_wrap {
+	z-index: 1;
+	padding: 50px;
+	border-radius: 4px;
+	position: relative;
+	margin-top: -110px;
+	box-shadow: 1px -2px 4px 0px rgba(0, 0, 0, 0.35);
+	.item_title {
+		line-height: 1;
+		font-size: 32px;
+	}
+
+	li {
+		font-size: 18px;
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+		i {
+			margin-right: 15px;
+		}
+	}
+}
+/* 14 - contact pages - end
+==================================================================================================== */

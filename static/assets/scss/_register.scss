@@ -1,0 +1,55 @@
+/* 16 - register page - start
+==================================================================================================== */
+.register_card {
+	padding: 50px;
+	.section_title {
+		.title_text {
+			font-size: 40px;
+		}
+	}
+
+	.reg_image {
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.form_title {
+		line-height: 1;
+		font-size: 40px;
+		margin-bottom: 5px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	.reset_pass,
+	.new_account {
+		display: block;
+		line-height: 1;
+		font-size: 18px;
+		font-weight: 700;
+		color: $default_black;
+		a {
+			color: $default_blue;
+			&:hover {
+				color: $default_red;
+			}
+		}
+	}
+
+	.checkbox_input {
+		color: #6E7684;
+	}
+	.form_item {
+		margin-bottom: 10px;
+	}
+	.custom_btn {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+/* 16 - register page - end
+==================================================================================================== */

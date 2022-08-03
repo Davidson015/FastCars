@@ -1,0 +1,26 @@
+// default font - start
+// ==================================================
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$body_font: 'Lato', sans-serif;
+$heading_font: 'Goldman', cursive;
+// default font - end
+// ==================================================
+
+
+// custom colors - start
+// ==================================================
+$default_red: #EA001E;
+$default_blue: #0048B9;
+$default_color: #1F2B3E;
+$default_black: #000C21;
+// custom colors - end
+// ==================================================
+
+
+// transition - start
+// ==================================================
+$default_transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+// transition - end
+// ==================================================

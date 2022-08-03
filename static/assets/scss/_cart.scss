@@ -1,0 +1,103 @@
+/* 18 - cart page - start
+==================================================================================================== */
+.cart_address_item {
+	margin-top: 30px;
+	h4 {
+		line-height: 1;
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 8px;
+		font-family: $body_font;
+	}
+	p {
+		font-size: 15px;
+		position: relative;
+		padding-left: 20px;
+	}
+	i {
+		margin-right: 5px;
+		margin-left: -20px;
+	}
+}
+
+.cart_info_content {
+	.title_text {
+		line-height: 1;
+		font-size: 18px;
+		font-weight: 700;
+		font-family: $body_font;
+	}
+	hr {
+		margin: 40px 0px;
+	}
+}
+
+.cart_info_list {
+	margin-top: 20px;
+	li {
+		padding-left: 20px;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	i {
+		margin-left: -20px;
+		margin-right: 10px;
+	}
+}
+
+.cart_info_list2 {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	strong {
+		font-size: 18px;
+		min-width: 170px;
+		margin-right: 25px;
+		display: inline-block;
+		color: $default_black;
+	}
+}
+
+.rental_calltoaction {
+	.register_btn {
+		font-size: 16px;
+		font-weight: 700;
+		color: $default_blue;
+		&:hover {
+			color: $default_red;
+		}
+	}
+}
+
+.cart_bottom_content {
+	.abtn_wrap {
+		float: right;
+		margin-top: 30px;
+	}
+}
+.cart_price_info {
+	margin-top: 30px;
+	li {
+		line-height: 1;
+		color: #6E7684;
+		font-size: 24px;
+		span {
+			min-width: 80px;
+			display: inline-block;
+		}
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+		&:last-child {
+			color: $default_black;
+			span {
+				font-weight: 700;
+			}
+		}
+	}
+}
+/* 18 - cart page - end
+==================================================================================================== */

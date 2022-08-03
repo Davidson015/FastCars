@@ -1,0 +1,38 @@
+/* 12 - reservation page - start
+==================================================================================================== */
+.reservation_offer_checkbox {
+	.checkbox_input {
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.reservation_customer_details {
+	.customer_gender {
+		li {
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.terms_condition {
+		font-size: 16px;
+		font-weight: 700;
+		color: $default_blue;
+	}
+
+	button[type=submit] {
+		width: 100%;
+		display: block;
+	}
+
+	.bonus_program {
+		font-size: 14px;
+		font-weight: 700;
+		color: $default_blue;
+	}
+}
+/* 12 - reservation page - end
+==================================================================================================== */

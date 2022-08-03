@@ -1,0 +1,47 @@
+/* 15 - faq page - start
+==================================================================================================== */
+.faq_accordion {
+	.card {
+		padding: 0px;
+		border: none;
+		border-radius: 0px;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	.card-header {
+		border: none;
+		padding: 0px;
+		background-color: transparent;
+		a {
+			font-size: 18px;
+			font-weight: 700;
+			padding-left: 30px;
+			position: relative;
+			color: $default_black;
+			&:before {
+				top: 0px;
+				left: 0px;
+				content: '\f067';
+				font-weight: 400;
+				position: absolute;
+				transition: $default_transition;
+				font-family: 'Font Awesome 5 Pro';
+			}
+			&:not(.collapsed) {
+				color: $default_red;
+				&:before {
+					content: '\f068';
+					transform: rotate(360deg);
+				}
+			}
+		}
+	}
+	.card-body {
+		padding: 0px;
+		padding-top: 10px;
+		padding-left: 30px;
+	}
+}
+/* 15 - faq page - end
+==================================================================================================== */

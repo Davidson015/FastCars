@@ -1,0 +1,64 @@
+/* 17 - account page - start
+==================================================================================================== */
+.account_tabs_menu {
+	padding: 35px;
+	border-radius: 4px;
+	.list_title {
+		line-height: 1;
+		font-size: 32px;
+	}
+	ul {
+		margin-left: -35px;
+		margin-right: -35px;
+	}
+	a {
+		width: 100%;
+		line-height: 1;
+		display: flex;
+		font-size: 18px;
+		font-weight: 700;
+		padding: 15px 35px;
+		align-items: center;
+		color: $default_black;
+		&:hover,
+		&.active {
+			color: $default_red;
+			background-color: #ffffff;
+		}
+	}
+	i {
+		margin-right: 10px;
+	}
+	.arrow {
+		margin-left: 20px;
+	}
+}
+
+.account_info_list {
+	&:not(:last-child) {
+		margin-bottom: 50px;
+		padding-bottom: 50px;
+		border-bottom: 1px solid #D8D8D8;
+	}
+	li {
+		font-weight: 700;
+		color: $default_black;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	span {
+		color: #6E7684;
+		font-weight: 400;
+		margin-right: 15px;
+		display: inline-block;
+	}
+	.text_btn {
+		margin-top: 30px;
+		span {
+			color: $default_red;
+		}
+	}
+}
+/* 17 - account page - end
+==================================================================================================== */

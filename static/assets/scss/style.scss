@@ -1,0 +1,69 @@
+/* table of content - start
+==================================================================================================== */
+
+/* 
+
+Project Name 	:  Rotors – Car Rental HTML5 Template
+File 			:  CSS Base
+Version 		:  1.0.0
+Last change 	:  17 November 2020
+Author 			:  Merkulove (https://themeforest.net/user/merkulove)
+Developer:		:  Rakibul Islam Dewan
+================================================== 
+
+01 - global gettings
+
+# Common Sections -
+02 - header
+03 - footer
+04 - breadcrumb
+05 - sidebar
+
+06 - home pages
+	 06.1 - home v.1
+	 06.2 - home v.2
+
+07 - about page
+08 - car page
+00 - shop page
+10 - blog page
+11 - all details pages
+12 - reservation page
+13 - review page
+14 - contact pages
+15 - faq page
+16 - register page
+17 - account page
+18 - cart page
+19 - service page
+
+*/
+
+/* table of content - end
+==================================================================================================== */
+
+@import "variable";
+@import "reset";
+
+@import "header";
+@import "footer";
+@import "breadcrumb";
+@import "sidebar";
+
+@import "home";
+
+@import "about";
+@import "car";
+@import "shop";
+@import "blog";
+@import "details";
+@import "reservation";
+@import "review";
+@import "contact";
+@import "faq";
+@import "register";
+@import "account";
+@import "cart";
+@import "service";
+
+@import "responsive";

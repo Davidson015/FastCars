@@ -1,0 +1,40 @@
+/* 08 - car page - start
+==================================================================================================== */
+
+.item_shorting {
+	padding: 30px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 6px 1px rgba(108, 108, 108, 0.15);
+
+	.item_available {
+		color: #6E7684;
+		display: block;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.form_item {
+		.nice-select {
+			height: 36px;
+			float: right;
+			max-width: 210px;
+			line-height: 34px;
+		}
+	}
+}
+
+.pagination_wrap {
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 1px solid #D8D8D8;
+	.page_number {
+		color: #6E7684;
+		display: block;
+		font-size: 18px;
+		font-weight: 700;
+	}
+}
+
+/* 08 - car page - end
+==================================================================================================== */

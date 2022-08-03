@@ -1,0 +1,60 @@
+/* 19 - service page - start
+==================================================================================================== */
+
+.service_primary {
+	max-width: 320px;
+	margin: 60px auto 0px;
+	.item_icon {
+		line-height: 1;
+		font-size: 48px;
+		margin-bottom: 20px;
+		color: $default_red;
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 32px;
+		margin-bottom: 15px;
+	}
+	&.text-white {
+		p {
+			color: #fcffff;
+		}
+	}
+}
+
+.booking_section {
+	.overlay {
+		opacity: .9;
+	}
+	.title_text {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+	.booking_info_list {
+		li {
+			position: relative;
+			padding-left: 40px;
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		i {
+			top: 5px;
+			left: 0px;
+			position: absolute;
+		}
+	}
+}
+
+.booking_form {
+	padding: 45px;
+	border-radius: 4px;
+	box-shadow: 0px -5px 12px 0px rgba(10, 41, 96, 0.32);
+	.custom_btn {
+		width: 100%;
+		display: block;
+	}
+}
+
+/* 19 - service page - end
+==================================================================================================== */

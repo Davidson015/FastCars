@@ -1,0 +1,1267 @@
+/*
+================================================== 
+*	Project Name 	:  Rotors – Car Rental HTML5 Template
+*	File 			:  CSS Base
+*	Version 		:  1.0.0
+*	Last change 	:  17 November 2020
+*	Author 			:  Merkulove (https://themeforest.net/user/merkulove)
+*	Developer:		:  Rakibul Islam Dewan
+
+*	css code for responsive layout To make Responsive
+==================================================
+*	1 - media screen and (max-width: 1440px)
+*	2 - media screen and (max-width: 1280px)
+*	3 - media screen and (max-width: 1199px)
+*	4 - media screen and (max-width: 991px)
+*	5 - media screen and (max-width: 767px)
+*	6 - media screen and (max-width: 680px)
+*	7 - media screen and (max-width: 580px)
+*	8 - media screen and (max-width: 480px)
+*	9 - media screen and (max-width: 320px)
+==================================================
+*/
+
+
+/*  ====================================================================================================
+1 - media screen and (max-width: 1440px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 1440px) {
+
+	/* global - start */
+	.custom_btn.btn_width {
+		min-width: auto;
+	}
+	.text_btn span {
+		font-size: 16px;
+	}
+	.text_btn img {
+		max-width: 35px;
+	}
+	/* global - end */
+
+
+	/* home 1 - start */
+	.banner_section .advance_search_form {
+		margin-top: 100px;
+	}
+
+	.gallery_fullimage .item_content {
+		padding: 30px;
+	}
+	.gallery_fullimage .item_title {
+		font-size: 30px;
+	}
+	.gallery_fullimage p {
+		font-size: 15px;
+	}
+
+	.gallery_fullimage_2 .item_content {
+		padding: 20px;
+	}
+	.gallery_fullimage_2 .item_title {
+		font-size: 18px;
+	}
+	.gallery_fullimage_2 .text_btn span {
+		font-size: 12px;
+	}
+	.gallery_fullimage_2 .item_price {
+		height: 30px;
+		min-width: auto;
+		font-size: 12px;
+		line-height: 30px;
+		padding: 0px 10px;
+		margin-bottom: 6px;
+	}
+
+	.blog_fullimage .item_content {
+		padding: 20px;
+	}
+	.blog_fullimage .item_title {
+		font-size: 26px;
+	}
+	.blog_fullimage p {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.blog_fullimage .text_btn span {
+		font-size: 14px;
+	}
+	/* home 1 - end */
+
+
+	/* contact - start */
+	#mapBox {
+		height: 500px;
+	}
+	/* contact - end */
+
+}
+
+/* ====================================================================================================
+1 - media screen and (max-width: 1440px) - end
+==================================================================================================== */
+
+
+/*  ====================================================================================================
+2 - media screen and (max-width: 1280px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 1280px) {
+
+	/* about - start */
+	.account_tabs_menu .list_title {
+		font-size: 26px;
+	}
+	.account_tabs_menu {
+		padding: 30px;
+	}
+	.account_tabs_menu ul {
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+	.account_tabs_menu a {
+		font-size: 16px;
+		padding: 15px 30px;
+	}
+	.account_tabs_menu .arrow {
+		max-width: 32px;
+		margin-left: 15px;
+	}
+	.account_info_list li {
+		font-size: 16px;
+	}
+	.account_info_list .list_title {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	/* about - end */
+
+}
+
+/* ====================================================================================================
+2 - media screen and (max-width: 1280px) - end
+==================================================================================================== */
+
+
+/*  ====================================================================================================
+3 - media screen and (max-width: 1199px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 1199px) {
+
+	/* global - start */
+	.primary_social_links li:not(:last-child) {
+		margin-right: 25px;
+	}
+
+	.backtotop {
+		width: 40px;
+		height: 40px;
+	}
+	.backtotop .scroll {
+		font-size: 14px;
+		line-height: 42px;
+	}
+	/* global - end */
+
+
+	/* header - start */
+	.main_menu > ul > li:not(:last-child) {
+		margin-right: 25px;
+	}
+	.header_action_btns > li:not(:last-child) {
+		margin-right: 25px;
+	}
+	.header_contact_info li:not(:last-child) {
+		margin-right: 30px;
+	}
+	/* header - end */
+
+
+	/* sidebar - start */
+	.sidebar_section {
+		padding: 30px;
+	}
+	.sb_widget_title {
+		font-size: 26px;
+	}
+
+	.blog_small_grid .item_title a {
+		font-size: 18px;
+	}
+	.blog_small_grid .post_date {
+		font-size: 14px;
+	}
+	.sb_category_list a {
+		font-size: 16px;
+	}
+
+	.sidebar_section .sidebar_header {
+		margin: -30px;
+		margin-bottom: 40px;
+	}
+
+	.sb_support_center li {
+		font-size: 16px;
+	}
+	/* sidebar - end */
+
+
+	/* home 1 - start */
+	.gallery_fullimage .item_title {
+		font-size: 24px;
+	}
+	.gallery_fullimage p {
+		margin-bottom: 10px;
+	}
+	.gallery_fullimage .item_content {
+		padding: 20px;
+	}
+
+	.car_choose_carousel .slick-prev {
+		left: 15px;
+	}
+	.car_choose_carousel .slick-next {
+		right: 15px;
+	}
+
+	.feature_vehicle_item .info_list li {
+		font-size: 12px;
+		padding: 10px 15px;
+	}
+	.feature_vehicle_filter .element-item {
+		width: 50%;
+	}
+	/* home 1 - end */
+
+
+	/* blog - start */
+	.blog_standard .item_title a {
+		font-size: 36px;
+	}
+	/* blog - end */
+
+}
+
+@media screen and (max-width: 1100px) {
+
+	/* global - start */
+	body {
+		font-size: 16px;
+	}
+
+	.custom_btn {
+		height: 55px;
+		font-size: 14px;
+		min-width: auto;
+		line-height: 57px;
+	}
+	.custom_btn img {
+		max-width: 35px;
+	}
+
+	.section_title .title_text {
+		font-size: 40px;
+	}
+
+	.input_title {
+		font-size: 16px;
+	}
+	.form_item input {
+		height: 55px;
+	}
+	.form_item .nice-select {
+		height: 55px;
+		line-height: 55px;
+	}
+	/* global - end */
+
+
+	/* home 1 - start */
+	.banner_section .card .card-header button {
+		font-size: 20px;
+	}
+	.banner_section .card {
+		padding: 25px;
+	}
+	.banner_section .card .card-body {
+		padding-top: 15px;
+	}
+	.banner_section .card strong {
+		font-size: 16px;
+	}
+	.banner_section .card p {
+		margin: 0px;
+		color: #CDCDCD;
+		font-size: 14px;
+	}
+	.banner_section h1 {
+		font-size: 54px;
+	}
+
+	.blog_fullimage p {
+		font-size: 14px;
+	}
+	.blog_fullimage .item_title {
+		font-size: 22px;
+	}
+	.blog_fullimage .text_btn span {
+		font-size: 12px;
+	}
+	.blog_fullimage .text_btn img {
+		max-width: 28px;
+	}
+	/* home 1 - end */
+
+
+	/* home 2 - start */
+	.service_primary .item_title {
+		font-size: 22px;
+	}
+	.service_primary {
+		max-width: 270px;
+	}
+	.feature_carousel_wrap {
+		max-width: 770px;
+		margin: 0px auto;
+	}
+
+	.blog_wrap .wrap_title,
+	.newsletter_form1 .form_title {
+		font-size: 30px;
+	}
+	.blog_child .item_title a {
+		font-size: 20px;
+	}
+	/* home 2 - end */
+
+}
+
+@media screen and (max-width: 1024px) {}
+
+/* ====================================================================================================
+3 - media screen and (max-width: 1199px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+4 - media screen and (max-width: 991px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 991px) {
+
+	/* global - start */
+	.order-last {
+		order: 0;
+	}
+
+	.sec_ptb_150 {
+		padding: 100px 0px;
+	}
+	.sec_ptb_100 {
+		padding: 80px 0px;
+	}
+	.mb_100 {
+		margin-bottom: 80px;
+	}
+
+	.backtotop {
+		width: 40px;
+		height: 40px;
+	}
+	.backtotop .scroll {
+		font-size: 14px;
+		line-height: 42px;
+	}
+	/* global - end */
+
+
+	/* header - start */
+	.main_menu,
+	.header_top {
+		display: none;
+	}
+	.stuck .header_bottom {
+		min-height: auto;
+	}
+
+	.cart_dropdown {
+		padding: 15px 0px;
+	}
+	.cart_dropdown .cart_items_list .item_image {
+		width: 60px;
+		margin-right: 10px;
+	}
+	.cart_dropdown .cart_items_list .item_title {
+		font-size: 14px;
+		margin-bottom: 0px;
+	}
+	.cart_dropdown .cart_items_list {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.cart_dropdown .btns_group {
+		padding: 15px 25px;
+		padding-bottom: 0px;
+	}
+	.cart_dropdown {
+		min-width: 280px;
+		padding: 20px 0px;
+	}
+	.cart_dropdown .btns_group .custom_btn {
+		height: 50px;
+		font-size: 12px;
+		line-height: 52px;
+	}
+
+	.secondary_header + main {
+		margin-top: 80px;
+	}
+	/* header - end */
+
+
+	/* breadcrumb - start */
+	.breadcrumb_nav ul {
+		justify-content: center;
+	}
+	/* breadcrumb - end */
+
+
+	/* sidebar - start */
+	.sidebar_section {
+		margin-top: 40px;
+	}
+
+	.filter_sidebar {
+		margin-top: 0px;
+		margin-bottom: 40px;
+	}
+	/* sidebar - end */
+
+
+	/* home 1 - start */
+	.banner_section {
+		background-position: center center !important;
+	}
+	.banner_section .banner_content {
+		max-width: 570px;
+		text-align: center;
+		margin: 0px auto 45px;
+	}
+	.banner_section .banner_accordion {
+		max-width: 700px;
+		margin: 0px auto;
+	}
+	.banner_section {
+		padding: 150px 0px;
+	}
+
+	.advance_search_form {
+		max-width: 700px;
+		margin: 60px auto 0px;
+	}
+
+	.gallery_2col_carousel {
+		max-width: 700px;
+		margin: -60px auto 0px;
+	}
+
+	.gallery_2col_carousel {
+		.item {
+			&:nth-child(2n+0) {
+				padding-top: 0px;
+			}
+		}
+	}
+
+	.offer_content .item_title {
+		font-size: 36px;
+	}
+
+	.car_choose_carousel .item_head {
+		display: block;
+	}
+	.car_choose_carousel .review_text {
+		margin-top: 10px;
+		justify-content: flex-start;
+	}
+	.car_choose_carousel .review_text li {
+		text-align: left !important;
+	}
+
+	.offer_info .item_title {
+		font-size: 20px;
+	}
+
+	.world_location .custom_btn[type=submit] {
+		margin-top: 15px;
+	}
+
+	.testimonial_contants_wrap .item_title {
+		font-size: 38px;
+	}
+	.testimonial_item p {
+		font-size: 18px;
+	}
+
+	.blog_fullimage p {
+		font-size: 13px;
+		margin-bottom: 0px;
+	}
+	.blog_fullimage .text_btn span {
+		font-size: 10px;
+	}
+	.blog_fullimage .text_btn img {
+		max-width: 25px;
+	}
+	.blog_fullimage .item_title {
+		font-size: 18px;
+	}
+	/* home 1 - end */
+
+
+	/* home 2 - start */
+	.main_slider .item h3 {
+		font-size: 48px;
+	}
+	.main_slider .slick-dots a {
+		width: 40px;
+		height: 8px;
+	}
+	.slider_section .main_left_arrow {
+		left: 30px;
+	}
+	.slider_section .main_right_arrow {
+		right: 30px;
+	}
+	.main_slider .item {
+		min-height: 670px;
+	}
+
+	.advance_search_form2 .custom_btn {
+		width: 100%;
+		display: block;
+	}
+	.advance_search_form2 .form_item,
+	.advance_search_form2 .price-range-area, {
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+	.advance_search_form2 {
+		padding-top: 10px;
+	}
+
+	.feature_carousel_wrap .carousel_nav .s1_left_arrow {
+		left: -30px;
+	}
+	.feature_carousel_wrap .carousel_nav .s1_right_arrow {
+		right: -30px;
+	}
+	.feature_fullimage .item_content {
+		padding: 30px;
+	}
+	.feature_fullimage .item_title {
+		font-size: 30px;
+		margin-bottom: 0px;
+	}
+	.feature_fullimage .text_btn span {
+		font-size: 14px;
+	}
+	.feature_fullimage .text_btn img {
+		max-width: 28px;
+	}
+	.feature_fullimage .item_price {
+		margin-bottom: 10px;
+	}
+
+	.blog_wrap {
+		text-align: center;
+	}
+	.blog_child {
+		margin: 30px auto 0px;
+	}
+
+	.newsletter_form1 {
+		margin-top: 40px;
+		text-align: center;
+		.primary_social_links {
+			justify-content: center;
+		}
+		.form_title {
+			margin-bottom: 10px;
+		}
+
+		.custom_btn {
+			margin-top: 15px;
+		}
+	}
+
+	.testimonial_carousel_wrap .carousel_nav.position_ycenter button:nth-child(1) {
+		left: 0px;
+	}
+	.testimonial_carousel_wrap .carousel_nav.position_ycenter button:nth-child(2) {
+		right: 0px;
+	}
+	.testimonial_carousel_wrap {
+		padding: 0px 15px;
+	}
+	/* home 2 - end */
+
+
+	/* about - start */
+	.funfact_item .counter_text {
+		font-size: 60px;
+	}
+	.funfact_item .item_title {
+		font-size: 16px;
+	}
+	.funfact_item .line {
+		width: 30px;
+		height: 5px;
+		margin: 15px 0px;
+	}
+	/* about - end */
+
+
+	/* account - start */
+	.account_tabs_menu {
+		margin-bottom: 40px;
+	}
+	.account_info_list:not(:last-child) {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+	}
+	.account_info_list .text_btn {
+		margin-top: 20px;
+	}
+	/* account - end */
+
+
+	/* blog details - start */
+	.blog_details h2 {
+		font-size: 48px;
+	}
+	.blog_details h3 {
+		font-size: 26px;
+	}
+	/* blog details - end */
+
+
+	/* car details - start */
+	.car_choose_carousel .item_title {
+		font-size: 32px;
+	}
+	/* car details - end */
+
+
+	/* cart - start */
+	.cart_info_content {
+		margin-top: 40px;
+	}
+	/* cart - end */
+
+
+	/* contact - start */
+	#mapBox {
+		height: 400px;
+	}
+	.contact_details_wrap {
+		max-width: 770px;
+		margin: -70px auto 0px;
+		.image_area {
+			margin-bottom: 30px;
+		}
+	}
+	/* contact - end */
+
+
+	/* register - start */
+	.register_card {
+		padding: 30px;
+		max-width: 770px;
+		margin: 0px auto 40px;
+		.reg_image {
+			display: none;
+		}
+	}
+	/* register - end */
+
+
+	/* reservation - start */
+	.reservation_form {
+		margin-top: 40px;
+		.bonus_program {
+			margin-bottom: 15px;
+		}
+		button[type=submit] {
+			margin-top: 30px;
+		}
+	}
+	/* reservation - end */
+
+
+	/* service - start */
+	.booking_form {
+		margin-top: 40px;
+	}
+	/* service - end */
+
+}
+
+@media screen and (max-width: 880px) {
+
+	/* global - start */
+	.social_list_title {
+		font-size: 15px;
+	}
+	.primary_social_links li:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	.text_btn span {
+		font-size: 14px;
+	}
+	.text_btn img {
+		max-width: 30px;
+	}
+	/* global - end */
+
+
+	/* home 2 - start */
+	.feature_carousel_wrap .carousel_nav .s1_left_arrow {
+		left: 30px;
+	}
+	.feature_carousel_wrap .carousel_nav .s1_right_arrow {
+		right: 30px;
+	}
+	/* home 2 - end */
+
+
+	/* blog - start */
+	.blog_standard .item_title a {
+		font-size: 30px;
+	}
+	/* blog - end */
+
+
+	/* car details - start */
+	.details_section .primary_social_links a {
+		font-size: 14px;
+	}
+	/* car details - end */
+
+
+	/* contact - start */
+	.main_office_section .office_info {
+		padding-left: 0px;
+	}
+	.main_office_section .office_info li:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	.main_office_section .office_info li {
+		font-size: 16px;
+	}
+	.main_office_section .item_title {
+		font-size: 42px;
+	}
+	/* contact - end */
+
+}
+
+/* ====================================================================================================
+4 - media screen and (max-width: 991px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+5 - media screen and (max-width: 767px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 767px) {
+
+	/* global - start */
+	.section_title .title_text {
+		font-size: 30px;
+	}
+
+	.sec_ptb_150 {
+		padding: 80px 0px;
+	}
+	.sec_ptb_100 {
+		padding: 60px 0px;
+	}
+	.mb_100 {
+		margin-bottom: 60px;
+	}
+
+	.pagination_wrap {
+		text-align: center;
+		.pagination_nav {
+			margin-top: 15px;
+			justify-content: center;
+		}
+	}
+	/* global - end */
+
+
+	/* footer - start */
+	.footer_contact_info,
+	.footer_useful_links {
+		margin-top: 40px;
+	}
+	.footer_bottom {
+		text-align: center;
+		.primary_social_links {
+			margin-top: 15px;
+			justify-content: center;
+		}
+	}
+	/* footer - end */
+
+
+	/* breadcrumb - start */
+	.page_title {
+		font-size: 38px;
+	}
+	/* breadcrumb - end */
+
+
+	/* home 1 - start */
+	.advance_search_form .custom_btn.btn_width {
+		margin-top: 30px;
+	}
+
+	.has_serial_number .serial_number {
+		padding: 0px;
+		border: none;
+		margin: 0px auto;
+		margin-bottom: 20px;
+		display: inline-block;
+		text-align: left !important;
+	}
+	.has_serial_number {
+		padding-top: 0px;
+	}
+
+	.car_choose_carousel .item_title {
+		font-size: 36px;
+	}
+	.car_choose_carousel .review_text {
+		margin-top: 15px;
+	}
+
+	.links_erap .primary_social_links {
+		margin-top: 15px;
+		justify-content: flex-start;
+	}
+	.testimonial_item {
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+	}
+
+	.blog_fullimage {
+		height: 370px;
+		display: flex;
+		>img {
+			object-fit: cover;
+		}
+	}
+	/* home 1 - end */
+
+
+	/* home 2 - start */
+	.main_slider .slider_content {
+		max-width: 470px;
+		margin: 0px auto;
+		padding: 0px 15px;
+	}
+	.main_slider .item h3 {
+		font-size: 36px;
+	}
+
+	.advance_search_form2 .custom_btn {
+		margin-top: 15px;
+	}
+	.advance_search_form2 .form_item,
+	.advance_search_form2 .price-range-area, {
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+	.advance_search_form2 {
+		padding: 20px;
+		padding-top: 5px;
+	}
+	/* home 2 - end */
+
+
+	/* blog details - start */
+	.blog_details h2 {
+		font-size: 36px;
+	}
+
+	.blog_details .comment_btn {
+		float: none;
+		margin-top: 20px;
+	}
+	.prev_next_post a {
+		font-size: 20px;
+	}
+	/* blog details - end */
+
+
+	/* contact - start */
+	.main_office_section .office_info {
+		margin-top: 30px;
+	}
+	.main_office_section .item_title {
+		font-size: 36px;
+	}
+	/* contact - end */
+
+
+	/* register - start */
+	.register_card .section_title .title_text {
+		font-size: 30px;
+	}
+	/* register - end */
+
+}
+
+/* ====================================================================================================
+5 - media screen and (max-width: 767px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+6 - media screen and (max-width: 680px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 680px) {
+
+	/* home 1 - start */
+	.feature_vehicle_item .info_list li {
+		width: 50%;
+		border: none;
+		font-size: 14px;
+		&:nth-child(1),
+		&:nth-child(2) {
+			border-bottom: 1px solid #D8D8D8;
+		}
+	}
+	.feature_vehicle_item .item_title a {
+		font-size: 16px;
+	}
+
+	.updown_style_wrap .updown_style {
+		width: 100%;
+	}
+	.updown_style_wrap .updown_style:nth-child(2n+0) {
+		padding: 0px;
+	}
+	.updown_style_wrap {
+		display: block;
+	}
+	/* home 1 - end */
+
+
+	/* home 2 - start */
+	.testimonial_carousel_wrap {
+		padding: 0px 30px;
+	}
+	.testimonial_item2 p {
+		font-size: 16px;
+	}
+	/* home 2 - end */
+
+
+	/* blog details - start */
+	.prev_next_post li {
+		width: 100%;
+		padding: 30px 40px;
+	}
+	.prev_next_post:before {
+		width: 100%;
+		height: 1px;
+	}
+	.prev_next_post {
+		padding: 0px;
+	}
+	/* blog details - end */
+
+}
+
+/* ====================================================================================================
+6 - media screen and (max-width: 680px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+7 - media screen and (max-width: 580px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 580px) {
+
+	/* home 1 - start */
+	.feature_vehicle_filter .element-item {
+		width: 100%;
+	}
+	.filters-button-group li:not(:last-child) {
+		margin-right: 0px;
+	}
+	.filters-button-group {
+		margin: -10px;
+	}
+	.filters-button-group li {
+		padding: 10px;
+	}
+	/* home 1 - end */
+
+
+	/* home 2 - start */
+	.slider_section .main_left_arrow,
+	.slider_section .main_right_arrow {
+		font-size: 30px;
+	}
+	.slider_section .main_left_arrow {
+		left: 15px;
+	}
+	.slider_section .main_right_arrow {
+		right: 15px;
+	}
+	.main_slider .slick-dots a {
+		width: 30px;
+		height: 5px;
+	}
+	.main_slider .slick-dots li:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.feature_fullimage {
+		height: 370px;
+		display: flex;
+		>img {
+			object-fit: cover;
+		}
+	}
+	.feature_fullimage .item_title {
+		font-size: 24px;
+	}
+	.feature_fullimage .item_price {
+		height: 28px;
+		min-width: 80px;
+		font-size: 12px;
+		line-height: 28px;
+	}
+	/* home 2 - end */
+
+
+	/* blog details - start */
+	.blog_details h3 {
+		font-size: 22px;
+	}
+	/* blog details - end */
+
+
+	/* contact - start */
+	.contact_details_wrap {
+		padding: 30px;
+	}
+	.contact_details_wrap .item_title {
+		font-size: 26px;
+	}
+	.contact_details_wrap li {
+		font-size: 15px;
+	}
+
+	.main_office_section .item_title {
+		font-size: 28px;
+	}
+	/* contact - end */
+
+
+	/* service - start */
+	.booking_section .title_text {
+		font-size: 32px;
+	}
+	.booking_form {
+		padding: 30px;
+	}
+	/* service - end */
+
+}
+
+@media screen and (max-width: 575px) {
+
+	/* header - start */
+	.mobile_sidebar_menu {
+		width: 300px;
+		right: -320px;
+		padding: 50px 30px;
+	}
+	/* header - end */
+
+
+	/* home 1 - start */
+	.testimonial_item .admin_info_wrap .admin_image {
+		min-width: 60px;
+		min-height: 60px;
+	}
+	.testimonial_item .admin_info_wrap .admin_name {
+		font-size: 20px;
+	}
+	.testimonial_item .rating_star li {
+		font-size: 12px;
+	}
+	/* home 1 - end */
+
+
+	/* blog details - start */
+	.blog_details h2 {
+		font-size: 30px;
+	}
+	/* blog details - end */
+
+
+	/* car - start */
+	.item_shorting {
+		text-align: center;
+	}
+	.item_shorting .form_item .nice-select {
+		float: none;
+		margin: 0px auto;
+		margin-top: 15px;
+	}
+	/* car - end */
+
+}
+
+/* ====================================================================================================
+7 - media screen and (max-width: 580px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+8 - media screen and (max-width: 480px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 480px) {
+
+	/* header - start */
+	.header_action_btns > li:not(:last-child) {
+		margin-right: 15px;
+	}
+	.collapse_search_body .form_item input {
+		height: 35px;
+		font-size: 15px;
+	}
+	.collapse_search_body .form_item button {
+		font-size: 15px;
+	}
+	.header_section .cart_dropdown {
+		right: -45px !important;
+	}
+	/* header - end */
+
+
+	/* breadcrumb - start */
+	.page_title {
+		font-size: 32px;
+	}
+	/* breadcrumb - end */
+
+
+	/* home 1 - start */
+	.gallery_fullimage {
+		height: 300px;
+		display: flex;
+	}
+	.gallery_fullimage > img {
+		object-fit: cover;
+	}
+	.gallery_fullimage .item_title {
+		font-size: 20px;
+	}
+	.gallery_fullimage p {
+		font-size: 13px;
+	}
+
+	.offer_content .item_title {
+		font-size: 30px;
+	}
+
+	.car_choose_carousel .btns_group {
+		margin-top: 15px;
+	}
+	.car_choose_carousel .btns_group li:not(:last-child) {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+	.car_choose_carousel .btns_group li {
+		width: 100%;
+		display: block;
+	}
+	.car_choose_carousel .btns_group li .custom_btn {
+		width: 100%;
+		display: block;
+	}
+	.car_choose_carousel .thumbnail_carousel {
+		margin-bottom: 15px;
+	}
+
+	.offer_info .item_title {
+		font-size: 20px;
+	}
+
+	.testimonial_contants_wrap .item_title {
+		font-size: 30px;
+	}
+	/* home 1 - end */
+
+
+	/* home 2 - start */
+	.main_slider .item h3 {
+		font-size: 28px;
+	}
+	/* home 2 - end */
+
+}
+
+/* ====================================================================================================
+8 - media screen and (max-width: 480px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+9 - media screen and (max-width: 320px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 380px) {
+
+	/* global - start */
+	.post_meta li {
+		font-size: 15px;
+	}
+	/* global - end */
+
+
+	/* blog - start */
+	.blog_standard .item_title a {
+		font-size: 22px;
+	}
+	/* blog - end */
+
+
+	/* blog details - start */
+	.blog_details h2 {
+		font-size: 26px;
+	}
+	/* blog details - end */
+
+}
+
+@media screen and (max-width: 320px) {}
+
+/* ====================================================================================================
+9 - media screen and (max-width: 320px) - end
+==================================================================================================== */

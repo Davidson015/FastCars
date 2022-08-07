@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,33 +10,33 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 		<title>Home V.1 - Rotors - Car Rental HTML5 Template</title>
-		<link rel="shortcut icon" href="assets/images/logo/favourite_icon.png">
+		<link rel="shortcut icon" href="{% static 'assets/images/logo/favourite_icon.png' %}">
 
 		<!-- fraimwork - css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
 
 		<!-- icon - css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/fontawesome.css' %}">
 
 		<!-- animation - css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/aos.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/aos.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css' %}">
 
 		<!-- carousel - css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick-theme.css' %}">
 
 		<!-- popup - css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/magnific-popup.css' %}">
 
 		<!-- select options - css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/nice-select.css' %}">
 
 		<!-- pricing range - css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/jquery-ui.css' %}">
 
 		<!-- custom - css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
 
 	</head>
 
@@ -108,8 +110,8 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 							<div class="brand_logo">
 								<a href="index.html">
-									<img src="assets/images/logo/logo_01_1x.png" srcset="assets/images/logo/logo_01_2x.png 2x" alt="logo_not_found">
-									<img src="assets/images/logo/logo_02_1x.png" srcset="assets/images/logo/logo_02_2x.png 2x" alt="logo_not_found">
+									<img src="{% static 'assets/images/logo/logo_01_1x.png' %}" srcset="assets/images/logo/logo_01_2x.png 2x" alt="logo_not_found">
+									<img src="{% static 'assets/images/logo/logo_02_1x.png' %}" srcset="assets/images/logo/logo_02_2x.png 2x" alt="logo_not_found">
 								</a>
 							</div>
 						</div>
@@ -131,7 +133,7 @@
 										<ul class="cart_items_list ul_li_block clearfix">
 											<li>
 												<div class="item_image">
-													<img src="assets/images/cart/img_2.png" alt="image_not_found">
+													<img src="{% static 'assets/images/cart/img_2.png' %}" alt="image_not_found">
 												</div>
 												<div class="item_content">
 													<h4 class="item_title">Digital Infrared Thermometer</h4>
@@ -142,7 +144,7 @@
 
 											<li>
 												<div class="item_image">
-													<img src="assets/images/cart/img_2.png" alt="image_not_found">
+													<img src="{% static 'assets/images/cart/img_2.png' %}" alt="image_not_found">
 												</div>
 												<div class="item_content">
 													<h4 class="item_title">Digital Infrared Thermometer</h4>
@@ -153,7 +155,7 @@
 
 											<li>
 												<div class="item_image">
-													<img src="assets/images/cart/img_2.png" alt="image_not_found">
+													<img src="{% static 'assets/images/cart/img_2.png' %}" alt="image_not_found">
 												</div>
 												<div class="item_content">
 													<h4 class="item_title">Digital Infrared Thermometer</h4>
@@ -163,8 +165,8 @@
 											</li>
 										</ul>
 										<ul class="btns_group ul_li_block clearfix">
-											<li><a href="cart.html" class="custom_btn bg_default_red text-uppercase">View Cart <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a></li>
-											<li><a href="#!" class="custom_btn bg_default_black text-uppercase">Checkout <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a></li>
+											<li><a href="cart.html" class="custom_btn bg_default_red text-uppercase">View Cart <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a></li>
+											<li><a href="#!" class="custom_btn bg_default_black text-uppercase">Checkout <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a></li>
 										</ul>
 									</div>
 								</li>
@@ -175,7 +177,7 @@
 									<div class="user_dropdown rotors_dropdown dropdown-menu clearfix" aria-labelledby="user_dropdown">
 										<div class="profile_info clearfix">
 											<a href="#!" class="user_thumbnail">
-												<img src="assets/images/meta/img_01.png" alt="thumbnail_not_found">
+												<img src="{% static 'assets/images/meta/img_01.png' %}" alt="thumbnail_not_found">
 											</a>
 											<div class="user_content">
 												<h4 class="user_name"><a href="#!">Rakibul Hassan</a></h4>
@@ -265,6 +267,99 @@
 		<!-- header_section - end
 		================================================== -->
     
+		<!-- mobile menu - start
+		================================================== -->
+		<div class="sidebar-menu-wrapper">
+			<div class="mobile_sidebar_menu">
+				<button type="button" class="close_btn"><i class="fal fa-times"></i></button>
+
+				<div class="about_content mb_60">
+					<div class="brand_logo mb_15">
+						<a href="index.html">
+							<img src="{% static 'assets/images/logo/logo_01_1x.png' %}" srcset="assets/images/logo/logo_01_2x.png 2x" alt="logo_not_found">
+						</a>
+					</div>
+					<p class="mb-0">
+						Nullam id dolor auctor, dignissim magna eu, mattis ante. Pellentesque tincidunt, elit a facilisis efficitur, nunc nisi scelerisque enim, rhoncus malesuada est velit a nulla. Cras porta mi vitae dolor tristique euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					</p>
+				</div>
+
+				<div class="menu_list mb_60 clearfix">
+					<h3 class="title_text text-white">Menu List</h3>
+					<ul class="ul_li_block clearfix">
+						<li class="active dropdown">
+							<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+							<ul class="dropdown-menu">
+								<li><a href="index_1.html">Home Page V.1</a></li>
+								<li><a href="index_2.html">Home Page V.2</a></li>
+							</ul>
+						</li>
+						<li><a href="gallery.html">Our Cars</a></li>
+						<li><a href="review.html">Reviews</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="dropdown">
+							<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+							<ul class="dropdown-menu">
+								<li><a href="service.html">Our Service</a></li>
+								<li><a href="gallery.html">Car Gallery</a></li>
+								<li><a href="account.html">My Account</a></li>
+								<li><a href="reservation.html">Reservation</a></li>
+								<li class="dropdown">
+									<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
+									<ul class="dropdown-menu">
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="blog_details.html">Blog Details</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Cars</a>
+									<ul class="dropdown-menu">
+										<li><a href="car.html">Cars</a></li>
+										<li><a href="car_details.html">Car Details</a></li>
+									</ul>
+								</li>
+								<li><a href="cart.html">Shopping Cart</a></li>
+								<li><a href="faq.html">F.A.Q.</a></li>
+								<li><a href="login.html">Login</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+							<ul class="dropdown-menu">
+								<li><a href="contact.html">Contact Default</a></li>
+								<li><a href="contact_wordwide.html">Contact Wordwide</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="booking_car_form">
+					<h3 class="title_text text-white mb-2">Book A Car</h3>
+					<p class="mb_15">
+						Nullam id dolor auctor, dignissim magna eu, mattis ante. Pellentesque tincidunt, elit a facilisis efficitur.
+					</p>
+					<form action="#">
+						<div class="form_item">
+							<h4 class="input_title text-white">Pick Up Location</h4>
+							<div class="position-relative">
+								<input id="location_one" type="text" name="location" placeholder="City, State or Airport Code">
+								<label for="location_one" class="input_icon"><i class="fas fa-map-marker-alt"></i></label>
+							</div>
+						</div>
+						<div class="form_item">
+							<h4 class="input_title text-white">Pick A Date</h4>
+							<input type="date" name="date">
+						</div>
+						<button type="submit" class="custom_btn bg_default_red btn_width text-uppercase">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></button>
+					</form>
+				</div>
+
+			</div>
+			<div class="overlay"></div>
+		</div>
+		<!-- mobile menu - end
+		================================================== -->
+    
     {% block main %}
     
     {% endblock main %}
@@ -279,7 +374,7 @@
 							<div class="footer_about" data-aos="fade-up" data-aos-delay="100">
 								<div class="brand_logo mb_30">
 									<a href="index.html">
-										<img src="assets/images/logo/logo_02_1x.png" srcset="assets/images/logo/logo_02_2x.png 2x" alt="logo_not_found">
+										<img src="{% static 'assets/images/logo/logo_02_1x.png' %}" srcset="assets/images/logo/logo_02_2x.png 2x" alt="logo_not_found">
 									</a>
 								</div>
 								<p class="mb_15">
@@ -360,47 +455,47 @@
 
 		
 		<!-- fraimwork - jquery include -->
-		<script src="assets/js/jquery-3.5.1.min.js"></script>
-		<script src="assets/js/popper.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="{% static 'assets/js/jquery-3.5.1.min.js' %}"></script>
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
 
 		<!-- animation - jquery include -->
-		<script src="assets/js/aos.js"></script>
-		<script src="assets/js/parallaxie.js"></script>
+		<script src="{% static 'assets/js/aos.js' %}"></script>
+		<script src="{% static 'assets/js/parallaxie.js' %}"></script>
 
 		<!-- carousel - jquery include -->
-		<script src="assets/js/slick.min.js"></script>
+		<script src="{% static 'assets/js/slick.min.js' %}"></script>
 
 		<!-- popup - jquery include -->
-		<script src="assets/js/magnific-popup.min.js"></script>
+		<script src="{% static 'assets/js/magnific-popup.min.js' %}"></script>
 
 		<!-- select ontions - jquery include -->
-		<script src="assets/js/nice-select.min.js"></script>
+		<script src="{% static 'assets/js/nice-select.min.js' %}"></script>
 
 		<!-- isotope - jquery include -->
-    <script src="assets/js/isotope.pkgd.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
 
 		<!-- google map - jquery include -->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&ver=2.1.6"></script>
-    <script src="assets/js/gmaps.min.js"></script>
+    <script src="{% static 'assets/js/gmaps.min.js' %}"></script>
 
 		<!-- pricing range - jquery include -->
-		<script src="assets/js/jquery-ui.js"></script>
+		<script src="{% static 'assets/js/jquery-ui.js' %}"></script>
 
 		<!-- counter - jquery include -->
-		<script src="assets/js/waypoint.js"></script>
-		<script src="assets/js/counterup.min.js"></script>
+		<script src="{% static 'assets/js/waypoint.js' %}"></script>
+		<script src="{% static 'assets/js/counterup.min.js' %}"></script>
 
 		<!-- contact form - jquery include -->
-    <script src="assets/js/validate.js"></script>
+    <script src="{% static 'assets/js/validate.js' %}"></script>
 
 		<!-- mobile menu - jquery include -->
-    <script src="assets/js/mCustomScrollbar.js"></script>
+    <script src="{% static 'assets/js/mCustomScrollbar.js' %}"></script>
 
 		<!-- custom - jquery include -->
-		<script src="assets/js/custom.js"></script>
+		<script src="{% static 'assets/js/custom.js' %}"></script>
 
 	</body>
 </html>

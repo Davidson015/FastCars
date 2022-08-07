@@ -1,108 +1,14 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block main %}
 	<!-- main body - start
 	================================================== -->
 	<main>
 
-
-		<!-- mobile menu - start
-		================================================== -->
-		<div class="sidebar-menu-wrapper">
-			<div class="mobile_sidebar_menu">
-				<button type="button" class="close_btn"><i class="fal fa-times"></i></button>
-
-				<div class="about_content mb_60">
-					<div class="brand_logo mb_15">
-						<a href="index.html">
-							<img src="assets/images/logo/logo_01_1x.png" srcset="assets/images/logo/logo_01_2x.png 2x" alt="logo_not_found">
-						</a>
-					</div>
-					<p class="mb-0">
-						Nullam id dolor auctor, dignissim magna eu, mattis ante. Pellentesque tincidunt, elit a facilisis efficitur, nunc nisi scelerisque enim, rhoncus malesuada est velit a nulla. Cras porta mi vitae dolor tristique euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit
-					</p>
-				</div>
-
-				<div class="menu_list mb_60 clearfix">
-					<h3 class="title_text text-white">Menu List</h3>
-					<ul class="ul_li_block clearfix">
-						<li class="active dropdown">
-							<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-							<ul class="dropdown-menu">
-								<li><a href="index_1.html">Home Page V.1</a></li>
-								<li><a href="index_2.html">Home Page V.2</a></li>
-							</ul>
-						</li>
-						<li><a href="gallery.html">Our Cars</a></li>
-						<li><a href="review.html">Reviews</a></li>
-						<li><a href="about.html">About</a></li>
-						<li class="dropdown">
-							<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-							<ul class="dropdown-menu">
-								<li><a href="service.html">Our Service</a></li>
-								<li><a href="gallery.html">Car Gallery</a></li>
-								<li><a href="account.html">My Account</a></li>
-								<li><a href="reservation.html">Reservation</a></li>
-								<li class="dropdown">
-									<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
-									<ul class="dropdown-menu">
-										<li><a href="blog.html">Blog</a></li>
-										<li><a href="blog_details.html">Blog Details</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Cars</a>
-									<ul class="dropdown-menu">
-										<li><a href="car.html">Cars</a></li>
-										<li><a href="car_details.html">Car Details</a></li>
-									</ul>
-								</li>
-								<li><a href="cart.html">Shopping Cart</a></li>
-								<li><a href="faq.html">F.A.Q.</a></li>
-								<li><a href="login.html">Login</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
-							<ul class="dropdown-menu">
-								<li><a href="contact.html">Contact Default</a></li>
-								<li><a href="contact_wordwide.html">Contact Wordwide</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-
-				<div class="booking_car_form">
-					<h3 class="title_text text-white mb-2">Book A Car</h3>
-					<p class="mb_15">
-						Nullam id dolor auctor, dignissim magna eu, mattis ante. Pellentesque tincidunt, elit a facilisis efficitur.
-					</p>
-					<form action="#">
-						<div class="form_item">
-							<h4 class="input_title text-white">Pick Up Location</h4>
-							<div class="position-relative">
-								<input id="location_one" type="text" name="location" placeholder="City, State or Airport Code">
-								<label for="location_one" class="input_icon"><i class="fas fa-map-marker-alt"></i></label>
-							</div>
-						</div>
-						<div class="form_item">
-							<h4 class="input_title text-white">Pick A Date</h4>
-							<input type="date" name="date">
-						</div>
-						<button type="submit" class="custom_btn bg_default_red btn_width text-uppercase">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></button>
-					</form>
-				</div>
-
-			</div>
-			<div class="overlay"></div>
-		</div>
-		<!-- mobile menu - end
-		================================================== -->
-
-
 		<!-- banner_section - start
 		================================================== -->
-		<section class="banner_section parallaxie has_overlay text-white d-flex align-items-center clearfix" data-bg-image="assets/images/backgrounds/bg_01.jpg">
+		<section class="banner_section parallaxie has_overlay text-white d-flex align-items-center clearfix" data-bg-image="{% static 'assets/images/backgrounds/bg_01.jpg' %}">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row align-items-center justify-content-lg-between">
@@ -113,7 +19,7 @@
 								Pellentesque nec lectus nisl. Cras magna velit, tue maximus et dui a, convallis cursus turpis. Arcu cursus euismod quis viverra nibh cras. Arcu cursus euismod quis viverra nibh cras
 							</p>
 							<div data-aos="fade-up" data-aos-delay="500">
-								<a class="custom_btn bg_default_red btn_width text-uppercase" href="#!">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+								<a class="custom_btn bg_default_red btn_width text-uppercase" href="#!">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a>
 							</div>
 						</div>
 					</div>
@@ -258,7 +164,7 @@
 
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 								<div data-aos="fade-up" data-aos-delay="300">
-									<button type="submit" class="custom_btn bg_default_red btn_width text-uppercase">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></button>
+									<button type="submit" class="custom_btn bg_default_red btn_width text-uppercase">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></button>
 								</div>
 							</div>
 						</div>
@@ -276,52 +182,52 @@
 			<div class="gallery_2col_carousel slideshow2_slider" data-slick='{"dots": false}' data-aos="fade-up" data-aos-delay="100">
 				<div class="item">
 					<div class="gallery_fullimage">
-						<img src="assets/images/gallery/img_01.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_01.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
 							<p>
 								Phasellus porta pulvinar metus, sit amet bibendum lectus hendrerit vel. Duis ullamcorper, justo quis hendrerit venenatis, purus mi volutpat dui, vel commodo urna eros eget sapien
 							</p>
-							<a class="text_btn text-uppercase" href="#!"><span>Find A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Find A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage">
-						<img src="assets/images/gallery/img_02.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_02.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
 							<p>
 								Phasellus porta pulvinar metus, sit amet bibendum lectus hendrerit vel. Duis ullamcorper, justo quis hendrerit venenatis, purus mi volutpat dui, vel commodo urna eros eget sapien
 							</p>
-							<a class="text_btn text-uppercase" href="#!"><span>Find A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Find A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage">
-						<img src="assets/images/gallery/img_01.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_01.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
 							<p>
 								Phasellus porta pulvinar metus, sit amet bibendum lectus hendrerit vel. Duis ullamcorper, justo quis hendrerit venenatis, purus mi volutpat dui, vel commodo urna eros eget sapien
 							</p>
-							<a class="text_btn text-uppercase" href="#!"><span>Find A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Find A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage">
-						<img src="assets/images/gallery/img_02.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_02.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
 							<p>
 								Phasellus porta pulvinar metus, sit amet bibendum lectus hendrerit vel. Duis ullamcorper, justo quis hendrerit venenatis, purus mi volutpat dui, vel commodo urna eros eget sapien
 							</p>
-							<a class="text_btn text-uppercase" href="#!"><span>Find A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Find A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
@@ -353,7 +259,7 @@
 									Ut id lobortis eros, sed finibus dui. Cras eget purus lacus. Suspendisse sodales massa quis turpis ultrices ultricies. Cras euismod eros at vehicula sagittis. Suspendisse condimentum tortor nec enim pellentesque feugiat. Fusce vulputate varius orci, eu imperdiet orci dictum in. Nulla tempor urna vitae sapien iaculis, auctor condimentum enim auctor
 								</p>
 								<div data-aos="fade-up" data-aos-delay="500">
-									<a class="text_btn text-uppercase" href="#!"><span>View All Offers</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+									<a class="text_btn text-uppercase" href="#!"><span>View All Offers</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 								</div>
 							</div>
 						</div>
@@ -371,88 +277,88 @@
 			<div class="offers_car_carousel slideshow4_slider" data-slick='{"dots": false}' data-aos="fade-up" data-aos-delay="100">
 				<div class="item">
 					<div class="gallery_fullimage_2">
-						<img src="assets/images/gallery/img_03.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_03.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<span class="item_price bg_default_blue">$670/Day</span>
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
-							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage_2">
-						<img src="assets/images/gallery/img_04.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_04.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<span class="item_price bg_default_blue">$670/Day</span>
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
-							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage_2">
-						<img src="assets/images/gallery/img_05.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_05.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<span class="item_price bg_default_blue">$670/Day</span>
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
-							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage_2">
-						<img src="assets/images/gallery/img_06.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_06.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<span class="item_price bg_default_blue">$670/Day</span>
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
-							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage_2">
-						<img src="assets/images/gallery/img_03.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_03.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<span class="item_price bg_default_blue">$670/Day</span>
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
-							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage_2">
-						<img src="assets/images/gallery/img_04.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_04.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<span class="item_price bg_default_blue">$670/Day</span>
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
-							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage_2">
-						<img src="assets/images/gallery/img_05.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_05.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<span class="item_price bg_default_blue">$670/Day</span>
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
-							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="item">
 					<div class="gallery_fullimage_2">
-						<img src="assets/images/gallery/img_06.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/gallery/img_06.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<span class="item_price bg_default_blue">$670/Day</span>
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
-							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Kook A Car</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
@@ -489,13 +395,13 @@
 												<li><span class="bg_default_blue">4.8/5</span></li>
 											</ul>
 										</div>
-										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/img_07.jpg' %}" alt="image_not_found">
 										<ul class="btns_group ul_li_center clearfix">
 											<li>
 												<span class="custom_btn btn_width bg_default_blue"><del>$800/Day</del> $400/Day</span>
 											</li>
 											<li>
-												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a>
 											</li>
 										</ul>
 									</div>
@@ -511,13 +417,13 @@
 												<li><span class="bg_default_blue">4.8/5</span></li>
 											</ul>
 										</div>
-										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/img_07.jpg' %}" alt="image_not_found">
 										<ul class="btns_group ul_li_center clearfix">
 											<li>
 												<span class="custom_btn btn_width bg_default_blue"><del>$800/Day</del> $400/Day</span>
 											</li>
 											<li>
-												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a>
 											</li>
 										</ul>
 									</div>
@@ -533,13 +439,13 @@
 												<li><span class="bg_default_blue">4.8/5</span></li>
 											</ul>
 										</div>
-										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/img_07.jpg' %}" alt="image_not_found">
 										<ul class="btns_group ul_li_center clearfix">
 											<li>
 												<span class="custom_btn btn_width bg_default_blue"><del>$800/Day</del> $400/Day</span>
 											</li>
 											<li>
-												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a>
 											</li>
 										</ul>
 									</div>
@@ -555,13 +461,13 @@
 												<li><span class="bg_default_blue">4.8/5</span></li>
 											</ul>
 										</div>
-										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/img_07.jpg' %}" alt="image_not_found">
 										<ul class="btns_group ul_li_center clearfix">
 											<li>
 												<span class="custom_btn btn_width bg_default_blue"><del>$800/Day</del> $400/Day</span>
 											</li>
 											<li>
-												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a>
 											</li>
 										</ul>
 									</div>
@@ -577,13 +483,13 @@
 												<li><span class="bg_default_blue">4.8/5</span></li>
 											</ul>
 										</div>
-										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/img_07.jpg' %}" alt="image_not_found">
 										<ul class="btns_group ul_li_center clearfix">
 											<li>
 												<span class="custom_btn btn_width bg_default_blue"><del>$800/Day</del> $400/Day</span>
 											</li>
 											<li>
-												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a>
 											</li>
 										</ul>
 									</div>
@@ -599,35 +505,35 @@
 												<li><span class="bg_default_blue">4.8/5</span></li>
 											</ul>
 										</div>
-										<img src="assets/images/gallery/img_07.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/img_07.jpg' %}" alt="image_not_found">
 										<ul class="btns_group ul_li_center clearfix">
 											<li>
 												<span class="custom_btn btn_width bg_default_blue"><del>$800/Day</del> $400/Day</span>
 											</li>
 											<li>
-												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+												<a href="#!" class="custom_btn btn_width bg_default_red text-uppercase">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a>
 											</li>
 										</ul>
 									</div>
 								</div>
 								<div class="thumbnail_carousel_nav">
 									<div class="item">
-										<img src="assets/images/gallery/child_01.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/child_01.jpg' %}" alt="image_not_found">
 									</div>
 									<div class="item">
-										<img src="assets/images/gallery/child_02.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/child_02.jpg' %}" alt="image_not_found">
 									</div>
 									<div class="item">
-										<img src="assets/images/gallery/child_03.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/child_03.jpg' %}" alt="image_not_found">
 									</div>
 									<div class="item">
-										<img src="assets/images/gallery/child_04.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/child_04.jpg' %}" alt="image_not_found">
 									</div>
 									<div class="item">
-										<img src="assets/images/gallery/child_01.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/child_01.jpg' %}" alt="image_not_found">
 									</div>
 									<div class="item">
-										<img src="assets/images/gallery/child_02.jpg" alt="image_not_found">
+										<img src="{% static 'assets/images/gallery/child_02.jpg' %}" alt="image_not_found">
 									</div>
 								</div>
 							</div>
@@ -687,7 +593,7 @@
 							</h3>
 							<div class="item_image position-relative">
 								<a class="image_wrap" href="#!">
-									<img src="assets/images/feature/img_01.jpg" alt="image_not_found">
+									<img src="{% static 'assets/images/feature/img_01.jpg' %}" alt="image_not_found">
 								</a>
 								<span class="item_price bg_default_blue">$230/Day</span>
 							</div>
@@ -709,7 +615,7 @@
 							</h3>
 							<div class="item_image position-relative">
 								<a class="image_wrap" href="#!">
-									<img src="assets/images/feature/img_02.jpg" alt="image_not_found">
+									<img src="{% static 'assets/images/feature/img_02.jpg' %}" alt="image_not_found">
 								</a>
 								<span class="item_price bg_default_blue">$230/Day</span>
 							</div>
@@ -731,7 +637,7 @@
 							</h3>
 							<div class="item_image position-relative">
 								<a class="image_wrap" href="#!">
-									<img src="assets/images/feature/img_03.jpg" alt="image_not_found">
+									<img src="{% static 'assets/images/feature/img_03.jpg' %}" alt="image_not_found">
 								</a>
 								<span class="item_price bg_default_blue">$120/Day</span>
 							</div>
@@ -753,7 +659,7 @@
 							</h3>
 							<div class="item_image position-relative">
 								<a class="image_wrap" href="#!">
-									<img src="assets/images/feature/img_04.jpg" alt="image_not_found">
+									<img src="{% static 'assets/images/feature/img_04.jpg' %}" alt="image_not_found">
 								</a>
 								<span class="item_price bg_default_blue">$230/Day</span>
 							</div>
@@ -775,7 +681,7 @@
 							</h3>
 							<div class="item_image position-relative">
 								<a class="image_wrap" href="#!">
-									<img src="assets/images/feature/img_05.jpg" alt="image_not_found">
+									<img src="{% static 'assets/images/feature/img_05.jpg' %}" alt="image_not_found">
 								</a>
 								<span class="item_price bg_default_blue">$160/Day</span>
 							</div>
@@ -797,7 +703,7 @@
 							</h3>
 							<div class="item_image position-relative">
 								<a class="image_wrap" href="#!">
-									<img src="assets/images/feature/img_06.jpg" alt="image_not_found">
+									<img src="{% static 'assets/images/feature/img_06.jpg' %}" alt="image_not_found">
 								</a>
 								<span class="item_price bg_default_blue">$230/Day</span>
 							</div>
@@ -812,7 +718,7 @@
 				</div>
 
 				<div class="abtn_wrap text-center clearfix" data-aos="fade-up" data-aos-delay="100">
-					<a class="custom_btn bg_default_red btn_width text-uppercase" href="#!">Book A Car <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></a>
+					<a class="custom_btn bg_default_red btn_width text-uppercase" href="#!">Book A Car <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></a>
 				</div>
 
 			</div>
@@ -946,7 +852,7 @@
 							</div>
 
 							<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-								<button type="submit" class="custom_btn bg_default_red text-uppercase">Search Location <img src="assets/images/icons/icon_01.png" alt="icon_not_found"></button>
+								<button type="submit" class="custom_btn bg_default_red text-uppercase">Search Location <img src="{% static 'assets/images/icons/icon_01.png' %}" alt="icon_not_found"></button>
 							</div>
 						</div>
 					</form>
@@ -967,7 +873,7 @@
 							<div class="save_btn">
 								<a href="#"><i class="fas fa-envelope"></i> Save for Later</a>
 							</div>
-							<a class="text_btn text-uppercase" href="#!"><span>View All Offers</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>View All Offers</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
@@ -1001,7 +907,7 @@
 								<div class="testimonial_item clearfix">
 									<div class="admin_info_wrap clearfix" data-aos="fade-up" data-aos-delay="200">
 										<div class="admin_image">
-											<img src="assets/images/meta/img_01.png" alt="image_not_found">
+											<img src="{% static 'assets/images/meta/img_01.png' %}" alt="image_not_found">
 										</div>
 										<div class="admin_content">
 											<h4 class="admin_name">Marianna Frazoni</h4>
@@ -1020,17 +926,17 @@
 									<div class="row">
 										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 											<div class="review_image has_overlay" data-aos="fade-up" data-aos-delay="400">
-												<img src="assets/images/testimonial/img_01.jpg" alt="image_not_found">
+												<img src="{% static 'assets/images/testimonial/img_01.jpg' %}" alt="image_not_found">
 												<a class="play_btn" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><i class="fas fa-play"></i></a>
 												<div class="overlay" data-bg-gradient="linear-gradient(0deg, rgba(1, 0, 10, .73), transparent)"></div>
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 											<div class="review_image" data-aos="fade-up" data-aos-delay="500">
-												<img src="assets/images/testimonial/img_02.jpg" alt="image_not_found">
+												<img src="{% static 'assets/images/testimonial/img_02.jpg' %}" alt="image_not_found">
 											</div>
 											<div class="review_image" data-aos="fade-up" data-aos-delay="600">
-												<img src="assets/images/testimonial/img_03.jpg" alt="image_not_found">
+												<img src="{% static 'assets/images/testimonial/img_03.jpg' %}" alt="image_not_found">
 											</div>
 										</div>
 									</div>
@@ -1039,7 +945,7 @@
 								<div class="testimonial_item clearfix">
 									<div class="admin_info_wrap clearfix" data-aos="fade-up" data-aos-delay="100">
 										<div class="admin_image">
-											<img src="assets/images/meta/img_01.png" alt="image_not_found">
+											<img src="{% static 'assets/images/meta/img_01.png' %}" alt="image_not_found">
 										</div>
 										<div class="admin_content">
 											<h4 class="admin_name">Donovan Nordtrom</h4>
@@ -1058,17 +964,17 @@
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 											<div class="review_image" data-aos="fade-up" data-aos-delay="300">
-												<img src="assets/images/testimonial/img_04.jpg" alt="image_not_found">
+												<img src="{% static 'assets/images/testimonial/img_04.jpg' %}" alt="image_not_found">
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 											<div class="review_image" data-aos="fade-up" data-aos-delay="400">
-												<img src="assets/images/testimonial/img_05.jpg" alt="image_not_found">
+												<img src="{% static 'assets/images/testimonial/img_05.jpg' %}" alt="image_not_found">
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 											<div class="review_image" data-aos="fade-up" data-aos-delay="500">
-												<img src="assets/images/testimonial/img_06.jpg" alt="image_not_found">
+												<img src="{% static 'assets/images/testimonial/img_06.jpg' %}" alt="image_not_found">
 											</div>
 										</div>
 									</div>
@@ -1077,7 +983,7 @@
 								<div class="testimonial_item clearfix">
 									<div class="admin_info_wrap clearfix" data-aos="fade-up" data-aos-delay="100">
 										<div class="admin_image">
-											<img src="assets/images/meta/img_01.png" alt="image_not_found">
+											<img src="{% static 'assets/images/meta/img_01.png' %}" alt="image_not_found">
 										</div>
 										<div class="admin_content">
 											<h4 class="admin_name">Elisabeth Summers</h4>
@@ -1096,17 +1002,17 @@
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 											<div class="review_image" data-aos="fade-up" data-aos-delay="300">
-												<img src="assets/images/testimonial/img_07.jpg" alt="image_not_found">
+												<img src="{% static 'assets/images/testimonial/img_07.jpg' %}" alt="image_not_found">
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 											<div class="review_image" data-aos="fade-up" data-aos-delay="400">
-												<img src="assets/images/testimonial/img_08.jpg" alt="image_not_found">
+												<img src="{% static 'assets/images/testimonial/img_08.jpg' %}" alt="image_not_found">
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 											<div class="review_image" data-aos="fade-up" data-aos-delay="500">
-												<img src="assets/images/testimonial/img_09.jpg" alt="image_not_found">
+												<img src="{% static 'assets/images/testimonial/img_09.jpg' %}" alt="image_not_found">
 											</div>
 										</div>
 									</div>
@@ -1116,7 +1022,7 @@
 									<div class="row align-items-center justify-content-lg-between">
 										<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 											<div class="abtn_wrap clearfix" data-aos="fade-up" data-aos-delay="100">
-												<a class="text_btn text-uppercase" href="#!"><span>View All Reviews</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+												<a class="text_btn text-uppercase" href="#!"><span>View All Reviews</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 											</div>
 										</div>
 										<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
@@ -1149,48 +1055,48 @@
 
 				<div class="updown_style">
 					<div class="blog_fullimage" data-aos="fade-up" data-aos-delay="100">
-						<img src="assets/images/blog/img_01.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/blog/img_01.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<h3 class="item_title text-white">Cras eu ante bibendum, lacinia velit sit amet, scelerisque enim</h3>
 							<p>
 								Phasellus porta pulvinar metus, sit amet bibendum lectus hendrerit vel. Duis ullamcorper, justo quis hendrerit venenatis, purus mi volutpat dui, vel commodo urna eros eget sapien
 							</p>
-							<a class="text_btn text-uppercase" href="#!"><span>Read in our blog</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Read in our blog</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 
 					<div class="blog_fullimage" data-aos="fade-up" data-aos-delay="300">
-						<img src="assets/images/blog/img_02.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/blog/img_02.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<h3 class="item_title text-white">Phasellus porta pulvinar metus</h3>
 							<p>
 								Phasellus porta pulvinar metus, sit amet bibendum lectus hendrerit vel. Duis ullamcorper, justo quis hendrerit venenatis, purus mi volutpat dui, vel commodo urna eros eget sapien
 							</p>
-							<a class="text_btn text-uppercase" href="#!"><span>Read in our blog</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Read in our blog</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="updown_style">
 					<div class="blog_fullimage" data-aos="fade-up" data-aos-delay="100">
-						<img src="assets/images/blog/img_03.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/blog/img_03.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<h3 class="item_title text-white">Fed finibus mi et purus finibus, ut condimentum mauris fringilla</h3>
 							<p>
 								Phasellus porta pulvinar metus, sit amet bibendum lectus hendrerit vel. Duis ullamcorper, justo quis hendrerit venenatis, purus mi volutpat dui, vel commodo urna eros eget sapien
 							</p>
-							<a class="text_btn text-uppercase" href="#!"><span>Read in our blog</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Read in our blog</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 
 					<div class="blog_fullimage" data-aos="fade-up" data-aos-delay="300">
-						<img src="assets/images/blog/img_04.jpg" alt="image_not_found">
+						<img src="{% static 'assets/images/blog/img_04.jpg' %}" alt="image_not_found">
 						<div class="item_content text-white">
 							<h3 class="item_title text-white">Maecenas sagittis turpis non pharetra pulvinar. Nullam mollis tortor eget</h3>
 							<p>
 								Phasellus porta pulvinar metus, sit amet bibendum lectus hendrerit vel. Duis ullamcorper, justo quis hendrerit venenatis, purus mi volutpat dui, vel commodo urna eros eget sapien
 							</p>
-							<a class="text_btn text-uppercase" href="#!"><span>Read in our blog</span> <img src="assets/images/icons/icon_02.png" alt="icon_not_found"></a>
+							<a class="text_btn text-uppercase" href="#!"><span>Read in our blog</span> <img src="{% static 'assets/images/icons/icon_02.png' %}" alt="icon_not_found"></a>
 						</div>
 					</div>
 				</div>

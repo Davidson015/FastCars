@@ -43,12 +43,43 @@ def faq(request):
 
   return render(request, template_name, context)
 
-# Reviews view
-def reviews(request):
-  template_name = 'review.html'
+# Testimonials view
+def testimonials(request):
+  template_name = 'reviews.html'
 
   context = {
-    'current': 'reviews'
+    'current': 'testimonials'
   }
 
   return render(request, template_name, context)
+
+# Gallery view
+def gallery(request):
+  template_name = 'gallery.html'
+
+  context = {
+    'current': 'gallery'
+  }
+
+  return render(request, template_name, context)
+
+# Reservation view
+def reservation(request):
+  template_name = 'reservation.html'
+
+  context = {
+    'current': 'reservation'
+  }
+
+  return render(request, template_name, context)
+
+# Car Detail view
+def car_details(request):
+  template_name = 'car_details.html'
+
+  context = {
+    'current': 'car_details'
+  }
+
+  return render(request, template_name, context)
+

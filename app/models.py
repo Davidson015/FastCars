@@ -29,7 +29,7 @@ class Vehicle(models.Model):
 
   model = models.CharField(max_length=250)
   make = models.ForeignKey(Brand, on_delete=models.CASCADE)
-  image = models.ImageField(upload_to='images/', blank=True)
+  image = models.ImageField(upload_to='images/vehicles/', blank=True)
   description = models.TextField(blank=True)
   price = models.DecimalField(max_digits=10, decimal_places=2)
   year = models.IntegerField()
@@ -76,7 +76,7 @@ class Booking(models.Model):
     verbose_name_plural = ("Bookings")
 
   def __str__(self):
-    return self.name
+    return f'To Pick up at: {self.pick_up_location.upper()} \nTo Drop off at: {self.drop_off_location}'
   
   def save(self, *args, **kwargs):
     self.get_vehicles()
@@ -84,4 +84,23 @@ class Booking(models.Model):
 
   def get_absolute_url(self):
     return reverse("Booking_detail", kwargs={"pk": self.pk})
+
+# Testimonial Model
+class Testimonial(models.Model):
+
+  review = models.TextField(blank=False)
+  client_image = models.ImageField(upload_to='images/testimonials/', blank=True)
+  client_name = models.CharField(max_length=100)
+  rating = models.IntegerField(blank=False)
+
+  class Meta:
+    verbose_name = ("Testimonial")
+    verbose_name_plural = ("Testimonials")
+
+  def __str__(self):
+    return self.name
+
+  def get_absolute_url(self):
+    return reverse("Testimonial_detail", kwargs={"pk": self.pk})
+
 

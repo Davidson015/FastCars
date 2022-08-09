@@ -103,4 +103,21 @@ class Testimonial(models.Model):
   def get_absolute_url(self):
     return reverse("Testimonial_detail", kwargs={"pk": self.pk})
 
+# Contact Model
+class Contact(models.Model):
 
+  first_name = models.CharField(max_length=100)
+  last_name = models.CharField(max_length=100)
+  email = models.EmailField(max_length=100, help_text='example@email.com')
+  phone_number = models.CharField(max_length=100, help_text='+234 012 345 6789')
+  message = models.TextField(blank=False)
+
+  class Meta:
+    verbose_name = ("Contact")
+    verbose_name_plural = ("Contacts")
+
+  def __str__(self):
+    return f'{self.first_name} ================= {self.email}'
+
+  def get_absolute_url(self):
+    return reverse("Contact_detail", kwargs={"pk": self.pk})

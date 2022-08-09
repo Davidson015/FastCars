@@ -56,9 +56,10 @@ class Booking(models.Model):
   vehicles = ()
 
   # getting the vehicles from the vehicle model to store in the vehicles tuple
-  vehicles_obj = Vehicle.objects.all()
-  for v in vehicles_obj:
-    vehicles.__add__((f'{v.make.name.upper()} {v.model.capitalize()}', f'{v.make.name.upper()} {v.model.capitalize()}'))
+  def get_vehicles(self):
+    vehicles = Vehicle.objects.all()
+    for v in vehicles:
+      self.vehicles.__add__((f'{v.make.name.upper()} {v.model.capitalize()}', f'{v.make.name.upper()} {v.model.capitalize()}'))
 
   pick_up_location = models.CharField(max_length=500)
   pick_up_date = models.DateField(blank=False)
@@ -76,6 +77,10 @@ class Booking(models.Model):
 
   def __str__(self):
     return self.name
+  
+  def save(self, *args, **kwargs):
+    self.get_vehicles()
+    super().save(*args, **kwargs)
 
   def get_absolute_url(self):
     return reverse("Booking_detail", kwargs={"pk": self.pk})
